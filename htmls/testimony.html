@@ -9,40 +9,68 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/i18n.js"></script>
   <script defer src="../js/main.js"></script>
 </head>
-<body>
+<body data-page="testimony">
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="../index.html">
         <span class="brand-mark">EP</span>
         <span>
           <strong>Enos Properti</strong>
-          <small>Trusted Property Agent</small>
+          <small data-i18n="brand.tagline">Trusted Property Agent</small>
         </span>
       </a>
 
-      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="header-end">
+        <div class="lang-switcher" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-set-lang="en" aria-pressed="true" title="English">
+            <span class="lang-flag-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" focusable="false">
+                <clipPath id="clip-en"><rect width="60" height="30" rx="1"/></clipPath>
+                <g clip-path="url(#clip-en)">
+                  <path fill="#b22234" d="M0 0h60v30H0z"/>
+                  <path stroke="#fff" stroke-width="2.3" d="M0 2.3h60M0 6.9h60M0 11.5h60M0 16.1h60M0 20.7h60M0 25.3h60"/>
+                  <path fill="#3c3b6e" d="M0 0h25.2v16.5H0z"/>
+                </g>
+              </svg>
+            </span>
+            <span class="lang-code">EN</span>
+          </button>
+          <button type="button" class="lang-btn" data-set-lang="id" aria-pressed="false" title="Indonesian">
+            <span class="lang-flag-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" focusable="false">
+                <rect fill="#ce1126" width="3" height="1"/>
+                <rect fill="#fff" y="1" width="3" height="1"/>
+              </svg>
+            </span>
+            <span class="lang-code">ID</span>
+          </button>
+        </div>
 
-      <nav class="site-nav">
-        <a href="../index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a class="active" href="testimony.html">Testimony</a>
-        <a class="btn btn-sm" href="#contact-proof">Contact</a>
-      </nav>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav">
+          <a href="../index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About Me</a>
+          <a class="active" href="testimony.html" data-i18n="nav.testimony">Testimony</a>
+          <a class="btn btn-sm" href="#contact-proof" data-i18n="nav.contact">Contact</a>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="page-hero">
       <div class="container">
-        <p class="eyebrow">Proof & Results</p>
-        <h1>Homes sold, clients helped, and trust earned.</h1>
-        <p class="lead narrow">
+        <p class="eyebrow" data-i18n="testimony.pageEyebrow">Proof & Results</p>
+        <h1 data-i18n="testimony.hero.h1">Homes sold, clients helped, and trust earned.</h1>
+        <p class="lead narrow" data-i18n="testimony.hero.lead">
           This page should be the proof page. Instead of only saying “trusted agent,” show real examples: sold listings,
           positive customer feedback, and clear signs of satisfaction.
         </p>
@@ -52,22 +80,22 @@
     <section class="section muted">
       <div class="container proof-grid">
         <article class="proof-card">
-          <span class="proof-label">Sold Home</span>
-          <div class="image-placeholder">Add sold house photo</div>
-          <h3>Modern Townhouse</h3>
-          <p>Replace this text with the property name, area, and short result summary.</p>
+          <span class="proof-label" data-i18n="testimony.proof.1.label">Sold Home</span>
+          <div class="image-placeholder" data-i18n="testimony.proof.1.placeholder">Add sold house photo</div>
+          <h3 data-i18n="testimony.proof.1.h3">Modern Townhouse</h3>
+          <p data-i18n="testimony.proof.1.p">Replace this text with the property name, area, and short result summary.</p>
         </article>
         <article class="proof-card">
-          <span class="proof-label">Sold Home</span>
-          <div class="image-placeholder">Add sold house photo</div>
-          <h3>Family Residence</h3>
-          <p>Use this card for another home that has been successfully sold.</p>
+          <span class="proof-label" data-i18n="testimony.proof.2.label">Sold Home</span>
+          <div class="image-placeholder" data-i18n="testimony.proof.2.placeholder">Add sold house photo</div>
+          <h3 data-i18n="testimony.proof.2.h3">Family Residence</h3>
+          <p data-i18n="testimony.proof.2.p">Use this card for another home that has been successfully sold.</p>
         </article>
         <article class="proof-card">
-          <span class="proof-label">Hot Listing</span>
-          <div class="image-placeholder">Add sold house photo</div>
-          <h3>Investment Property</h3>
-          <p>Show different property categories so visitors see range and credibility.</p>
+          <span class="proof-label" data-i18n="testimony.proof.3.label">Hot Listing</span>
+          <div class="image-placeholder" data-i18n="testimony.proof.3.placeholder">Add sold house photo</div>
+          <h3 data-i18n="testimony.proof.3.h3">Investment Property</h3>
+          <p data-i18n="testimony.proof.3.p">Show different property categories so visitors see range and credibility.</p>
         </article>
       </div>
     </section>
@@ -76,22 +104,22 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="eyebrow">Customer satisfaction</p>
-            <h2>What clients can say about the service</h2>
+            <p class="eyebrow" data-i18n="testimony.sat.eyebrow">Customer satisfaction</p>
+            <h2 data-i18n="testimony.sat.h2">What clients can say about the service</h2>
           </div>
         </div>
         <div class="testimonial-grid">
           <article class="testimonial-card">
-            <p>“Enos was very responsive and helped us understand each step clearly. The process felt much easier.”</p>
-            <strong>— Client Name</strong>
+            <p data-i18n="testimony.quote.1">“Enos was very responsive and helped us understand each step clearly. The process felt much easier.”</p>
+            <strong data-i18n="testimony.quote.by">— Client Name</strong>
           </article>
           <article class="testimonial-card">
-            <p>“We felt comfortable asking questions, and the recommendations matched what we were looking for.”</p>
-            <strong>— Client Name</strong>
+            <p data-i18n="testimony.quote.2">“We felt comfortable asking questions, and the recommendations matched what we were looking for.”</p>
+            <strong data-i18n="testimony.quote.by">— Client Name</strong>
           </article>
           <article class="testimonial-card">
-            <p>“Professional, friendly, and serious about helping us find the right property.”</p>
-            <strong>— Client Name</strong>
+            <p data-i18n="testimony.quote.3">“Professional, friendly, and serious about helping us find the right property.”</p>
+            <strong data-i18n="testimony.quote.by">— Client Name</strong>
           </article>
         </div>
       </div>
@@ -100,15 +128,15 @@
     <section class="section soft-accent" id="contact-proof">
       <div class="container cta-panel">
         <div>
-          <p class="eyebrow">Final step</p>
-          <h2>Make contacting him simple.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="testimony.cta.eyebrow">Final step</p>
+          <h2 data-i18n="testimony.cta.h2">Make contacting him simple.</h2>
+          <p data-i18n="testimony.cta.p">
             A proof page works best when it ends with one clear next action. Add WhatsApp, Instagram, and direct call buttons here.
           </p>
         </div>
         <div class="cta-actions">
-          <a class="btn" href="https://api.whatsapp.com/message/AVIY6R47TOXSC1">Contact Now</a>
-          <a class="btn btn-outline" href="../index.html">Back to Home</a>
+          <a class="btn" href="https://api.whatsapp.com/message/AVIY6R47TOXSC1" data-i18n="testimony.btn.contact">Contact Now</a>
+          <a class="btn btn-outline" href="../index.html" data-i18n="testimony.btn.home">Back to Home</a>
         </div>
       </div>
     </section>
@@ -116,11 +144,11 @@
 
   <footer class="site-footer">
     <div class="container footer-wrap">
-      <p>© 2026 Enos Properti. All rights reserved.</p>
+      <p data-i18n="footer.rights">© 2026 Enos Properti. All rights reserved.</p>
       <div class="footer-links">
-        <a href="../index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="testimony.html">Testimony</a>
+        <a href="../index.html" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-i18n="nav.about">About Me</a>
+        <a href="testimony.html" data-i18n="nav.testimony">Testimony</a>
       </div>
     </div>
   </footer>

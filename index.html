@@ -9,31 +9,59 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/i18n.js"></script>
   <script defer src="js/main.js"></script>
 </head>
-<body>
+<body data-page="index">
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html">
         <span class="brand-mark">EP</span>
         <span>
           <strong>Enos Properti</strong>
-          <small>Trusted Property Agent</small>
+          <small data-i18n="brand.tagline">Trusted Property Agent</small>
         </span>
       </a>
 
-      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="header-end">
+        <div class="lang-switcher" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-set-lang="en" aria-pressed="true" title="English">
+            <span class="lang-flag-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" focusable="false">
+                <clipPath id="clip-en"><rect width="60" height="30" rx="1"/></clipPath>
+                <g clip-path="url(#clip-en)">
+                  <path fill="#b22234" d="M0 0h60v30H0z"/>
+                  <path stroke="#fff" stroke-width="2.3" d="M0 2.3h60M0 6.9h60M0 11.5h60M0 16.1h60M0 20.7h60M0 25.3h60"/>
+                  <path fill="#3c3b6e" d="M0 0h25.2v16.5H0z"/>
+                </g>
+              </svg>
+            </span>
+            <span class="lang-code">EN</span>
+          </button>
+          <button type="button" class="lang-btn" data-set-lang="id" aria-pressed="false" title="Indonesian">
+            <span class="lang-flag-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" focusable="false">
+                <rect fill="#ce1126" width="3" height="1"/>
+                <rect fill="#fff" y="1" width="3" height="1"/>
+              </svg>
+            </span>
+            <span class="lang-code">ID</span>
+          </button>
+        </div>
 
-      <nav class="site-nav">
-        <a class="active" href="index.html">Home</a>
-        <a href="htmls/about.html">About Me</a>
-        <a href="htmls/testimony.html">Testimony</a>
-        <a class="btn btn-sm" href="#contact">Contact</a>
-      </nav>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav">
+          <a class="active" href="index.html" data-i18n="nav.home">Home</a>
+          <a href="htmls/about.html" data-i18n="nav.about">About Me</a>
+          <a href="htmls/testimony.html" data-i18n="nav.testimony">Testimony</a>
+          <a class="btn btn-sm" href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -41,28 +69,28 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Jakarta • Tangsel • Depok • Bogor</p>
-          <h1>Helping people find the right home with confidence.</h1>
-          <p class="lead">
+          <p class="eyebrow" data-i18n="index.hero.eyebrow">Jakarta • Tangsel • Depok • Bogor</p>
+          <h1 data-i18n="index.hero.h1">Helping people find the right home with confidence.</h1>
+          <p class="lead" data-i18n="index.hero.lead">
             Enos helps clients buy, sell, and invest in property with clear guidance, responsive service,
             and a results-focused approach.
           </p>
           <div class="hero-actions">
-            <a class="btn" href="htmls/about.html">Learn More</a>
-            <a class="btn btn-outline" href="htmls/testimony.html">See Results</a>
+            <a class="btn" href="htmls/about.html" data-i18n="index.btn.learnMore">Learn More</a>
+            <a class="btn btn-outline" href="htmls/testimony.html" data-i18n="index.btn.seeResults">See Results</a>
           </div>
           <ul class="trust-points">
-            <li>Trusted local guidance</li>
-            <li>Property matching based on needs</li>
-            <li>Clear process from inquiry to closing</li>
+            <li data-i18n="index.trust.1">Trusted local guidance</li>
+            <li data-i18n="index.trust.2">Property matching based on needs</li>
+            <li data-i18n="index.trust.3">Clear process from inquiry to closing</li>
           </ul>
         </div>
 
         <div class="hero-card">
-          <img src="Enos-Pic/Enos.jpeg" alt="Portrait of Enos, property agent" />
+          <img src="Enos-Pic/Enos.jpeg" alt="Portrait of Enos, property agent" data-i18n-attr="alt:index.hero.imgAlt" />
           <div class="hero-card-info">
             <h2>Enos Budiman</h2>
-            <p>Property Agent</p>
+            <p data-i18n="index.hero.role">Property Agent</p>
           </div>
         </div>
       </div>
@@ -71,16 +99,16 @@
     <section class="section muted">
       <div class="container stats-grid">
         <article class="stat-card">
-          <h3>Trusted Service</h3>
-          <p>Focused on honest communication and long-term client trust.</p>
+          <h3 data-i18n="index.stat.1.h">Trusted Service</h3>
+          <p data-i18n="index.stat.1.p">Focused on honest communication and long-term client trust.</p>
         </article>
         <article class="stat-card">
-          <h3>Strategic Matching</h3>
-          <p>Helping clients choose homes that fit lifestyle, budget, and location.</p>
+          <h3 data-i18n="index.stat.2.h">Strategic Matching</h3>
+          <p data-i18n="index.stat.2.p">Helping clients choose homes that fit lifestyle, budget, and location.</p>
         </article>
         <article class="stat-card">
-          <h3>Strong Follow-Up</h3>
-          <p>Consistent assistance before, during, and after the transaction.</p>
+          <h3 data-i18n="index.stat.3.h">Strong Follow-Up</h3>
+          <p data-i18n="index.stat.3.p">Consistent assistance before, during, and after the transaction.</p>
         </article>
       </div>
     </section>
@@ -88,28 +116,28 @@
     <section class="section">
       <div class="container split-grid">
         <div>
-          <p class="eyebrow">Why clients choose Enos</p>
-          <h2>Professional, approachable, and easy to work with.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="index.section.eyebrow">Why clients choose Enos</p>
+          <h2 data-i18n="index.section.h2">Professional, approachable, and easy to work with.</h2>
+          <p data-i18n="index.section.p1">
             A property website should not only look elegant. It should also quickly answer the real questions visitors have:
             Can I trust this agent? What areas does he handle? What proof of results is there? And how can I contact him fast?
           </p>
-          <p>
+          <p data-i18n="index.section.p2">
             That is why this website keeps the structure simple: a strong home page, a personal about page, and a proof-based testimony page.
           </p>
         </div>
         <div class="feature-stack">
           <article class="feature-card">
-            <h3>Clear communication</h3>
-            <p>Clients feel guided, not pressured.</p>
+            <h3 data-i18n="index.feature.1.h">Clear communication</h3>
+            <p data-i18n="index.feature.1.p">Clients feel guided, not pressured.</p>
           </article>
           <article class="feature-card">
-            <h3>Local market understanding</h3>
-            <p>Suitable recommendations based on area and value.</p>
+            <h3 data-i18n="index.feature.2.h">Local market understanding</h3>
+            <p data-i18n="index.feature.2.p">Suitable recommendations based on area and value.</p>
           </article>
           <article class="feature-card">
-            <h3>Results with trust</h3>
-            <p>Proof of sold homes and customer satisfaction.</p>
+            <h3 data-i18n="index.feature.3.h">Results with trust</h3>
+            <p data-i18n="index.feature.3.p">Proof of sold homes and customer satisfaction.</p>
           </article>
         </div>
       </div>
@@ -118,9 +146,9 @@
     <section class="section soft-accent">
       <div class="container cta-panel" id="contact">
         <div>
-          <p class="eyebrow">Ready to talk?</p>
-          <h2>Let your visitors contact him quickly.</h2>
-          <p>Add WhatsApp, Instagram, and call buttons here so clients do not need to search for the next step.</p>
+          <p class="eyebrow" data-i18n="index.cta.eyebrow">Ready to talk?</p>
+          <h2 data-i18n="index.cta.h2">Let your visitors contact him quickly.</h2>
+          <p data-i18n="index.cta.p">Add WhatsApp, Instagram, and call buttons here so clients do not need to search for the next step.</p>
         </div>
         <div class="cta-actions">
           <a class="btn" href="https://api.whatsapp.com/message/AVIY6R47TOXSC1">WhatsApp</a>
@@ -134,11 +162,11 @@
 
   <footer class="site-footer">
     <div class="container footer-wrap">
-      <p>© 2026 Enos Properti. All rights reserved.</p>
+      <p data-i18n="footer.rights">© 2026 Enos Properti. All rights reserved.</p>
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="htmls/about.html">About Me</a>
-        <a href="htmls/testimony.html">Testimony</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="htmls/about.html" data-i18n="nav.about">About Me</a>
+        <a href="htmls/testimony.html" data-i18n="nav.testimony">Testimony</a>
       </div>
     </div>
   </footer>

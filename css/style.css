@@ -62,6 +62,73 @@ a {
   gap: 1rem;
 }
 
+.header-end {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-left: auto;
+}
+
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  margin: 0;
+  min-width: 2.25rem;
+  padding: 0.3rem 0.45rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  color: var(--black);
+  cursor: pointer;
+  opacity: 0.72;
+  transition: opacity 0.2s ease, background 0.2s ease;
+}
+
+.lang-flag-icon {
+  display: flex;
+  flex-shrink: 0;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(18, 18, 18, 0.12);
+}
+
+.lang-flag-icon svg {
+  display: block;
+  width: 22px;
+  height: auto;
+}
+
+.lang-code {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.lang-btn:hover {
+  opacity: 0.92;
+}
+
+.lang-btn.is-active {
+  opacity: 1;
+  background: rgba(79, 111, 82, 0.14);
+}
+
 .brand {
   display: flex;
   align-items: center;
