@@ -19,7 +19,7 @@
       'a11y.lang': 'Language',
       'a11y.langEn': 'English',
       'a11y.langId': 'Indonesian',
-      'footer.rights': '© 2026 Enos Properti. All rights reserved.',
+      'footer.rights': '© 2026 PT Nusa Bhumi Group. All rights reserved.',
       'index.hero.eyebrow': 'Jakarta • Tangsel • Depok • Bogor',
       'index.hero.h1': 'Helping people find the right home with confidence.',
       'index.hero.lead':
@@ -132,7 +132,7 @@
       'a11y.lang': 'Bahasa',
       'a11y.langEn': 'Bahasa Inggris',
       'a11y.langId': 'Bahasa Indonesia',
-      'footer.rights': '© 2026 Enos Properti. Hak cipta dilindungi.',
+      'footer.rights': '© 2026 PT Nusa Bhumi Group. Hak cipta dilindungi.',
       'index.hero.eyebrow': 'Jakarta • Tangsel • Depok • Bogor',
       'index.hero.h1': 'Membantu orang menemukan rumah yang tepat dengan percaya diri.',
       'index.hero.lead':
