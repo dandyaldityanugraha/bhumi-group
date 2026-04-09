@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me | Enos Properti</title>
   <meta name="description" content="Learn more about Enos and his property service approach." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#4f6f52" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About Me | Enos Properti" />
+  <meta property="og:description" content="Learn more about Enos and his property service approach." />
+  <meta property="og:image" content="../Enos-Pic/Enos.jpeg" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Me | Enos Properti" />
+  <meta name="twitter:description" content="Learn more about Enos and his property service approach." />
+  <meta name="twitter:image" content="../Enos-Pic/Enos.jpeg" />
+  <link rel="icon" type="image/jpeg" href="../Enos-Pic/logo.jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,10 +25,13 @@
   <script defer src="../js/main.js"></script>
 </head>
 <body data-page="about">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="../index.html">
-        <span class="brand-mark">EP</span>
+        <span class="brand-mark">
+          <img src="../Enos-Pic/logo.jpeg" alt="Enos Properti logo" />
+        </span>
         <span>
           <strong>Enos Properti</strong>
           <small data-i18n="brand.tagline">Trusted Property Agent</small>
@@ -49,31 +64,41 @@
           </button>
         </div>
 
-        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <nav class="site-nav">
+        <nav class="site-nav" id="primary-nav">
           <a href="../index.html" data-i18n="nav.home">Home</a>
           <a class="active" href="about.html" data-i18n="nav.about">About Me</a>
-          <a href="testimony.html" data-i18n="nav.testimony">Testimony</a>
+          <a href="testimony.html" data-i18n="nav.testimony">Testimonials</a>
           <a class="btn btn-sm" href="testimony.html#contact-proof" data-i18n="nav.contact">Contact</a>
         </nav>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="page-hero">
       <div class="container page-hero-grid">
         <div>
           <p class="eyebrow" data-i18n="about.pageEyebrow">About Me</p>
-          <h1 data-i18n="about.hero.h1">Meet the agent behind the service.</h1>
+          <p class="intro-line" data-i18n="about.hello">Hello world, I'm Enos Budiman Pribawa.</p>
+          <h1 data-i18n="about.hero.h1">Get to know the person guiding your journey.</h1>
           <p class="lead" data-i18n="about.hero.lead">
-            Enos is focused on helping clients make smart property decisions with confidence, clarity, and personal support.
+            You deserve a property advisor who listens, explains clearly, and helps you make confident decisions without pressure.
           </p>
+          <ul class="profile-badges">
+            <li data-i18n="about.profile.license">Licensed real estate agent</li>
+            <li data-i18n="about.profile.area">Based in Jakarta, Tangsel, Depok, and Bogor</li>
+            <li>
+              <a href="https://www.instagram.com/enosproperti/" target="_blank" rel="noopener noreferrer" data-i18n="about.profile.instagram">
+                Instagram: @enosproperti
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="portrait-frame small">
           <img src="../Enos-Pic/Enos.jpeg" alt="Enos sitting in a suit" data-i18n-attr="alt:about.imgAlt" />
@@ -86,13 +111,12 @@
         <article>
           <h2 data-i18n="about.intro.h2">Short introduction</h2>
           <p data-i18n="about.intro.p1">
-            I help clients buy, sell, and explore property opportunities with a service approach that is professional,
-            responsive, and relationship-driven. My goal is not only to close deals, but to make each client feel informed,
-            comfortable, and well-guided throughout the process.
+            When we work together, you can expect professional guidance, fast communication, and clear next steps.
+            The focus is not just reaching booking and handover, but helping you feel informed and in control from start to finish.
           </p>
           <p data-i18n="about.intro.p2">
-            I understand that buying a home is emotional and financial at the same time. Because of that, I focus on listening first,
-            then giving recommendations that match the client’s priorities.
+            I understand that choosing a home from a developer is both emotional and financial. My approach is to listen carefully first,
+            then provide recommendations that align with each client's goals, timeline, and budget.
           </p>
         </article>
         <article class="info-panel">
@@ -125,12 +149,46 @@
     </section>
 
     <section class="section">
+      <div class="container split-grid">
+        <article class="fun-box">
+          <p class="eyebrow" data-i18n="about.fun.eyebrow">Real Talk</p>
+          <h2 data-i18n="about.fun.h2">No confusing property jargon here.</h2>
+          <p data-i18n="about.fun.p1">
+            Think of this as working with a trusted friend who also understands the market.
+            You can ask anything, get honest answers, and move at your own pace.
+          </p>
+          <p data-i18n="about.fun.p2">
+            Your goals lead the process. I help simplify the options, compare what matters,
+            and keep every step clear so you always know what comes next.
+          </p>
+        </article>
+        <article class="quick-qa">
+          <h3 data-i18n="about.qa.h3">Quick Q&A</h3>
+          <ul class="qa-list">
+            <li>
+              <strong data-i18n="about.qa.q1">"Can I start even if I am still just exploring?"</strong>
+              <p data-i18n="about.qa.a1">Absolutely. We can map your options first, then decide the right timing.</p>
+            </li>
+            <li>
+              <strong data-i18n="about.qa.q2">"Will you guide me through the paperwork?"</strong>
+              <p data-i18n="about.qa.a2">Yes. You will get clear step-by-step guidance from booking to handover.</p>
+            </li>
+            <li>
+              <strong data-i18n="about.qa.q3">"I am busy. Can this process stay efficient?"</strong>
+              <p data-i18n="about.qa.a3">Yes. I keep communication concise, practical, and aligned with your schedule.</p>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="container story-box">
-        <p class="eyebrow" data-i18n="about.improve.eyebrow">Suggested improvement</p>
-        <h2 data-i18n="about.improve.h2">What this page should do</h2>
+        <p class="eyebrow" data-i18n="about.improve.eyebrow">How I work</p>
+        <h2 data-i18n="about.improve.h2">A service approach built on trust and results</h2>
         <p data-i18n="about.improve.p">
-          A lot of agent websites make the mistake of only talking about themselves. A better approach is to connect the personal story to client value.
-          That is why this page explains not just who Enos is, but why his style of service matters to buyers and sellers.
+          Every client has a unique story. I focus on clear communication, honest guidance, and strong follow-through so each step
+          from consultation to handover feels organized, transparent, and comfortable.
         </p>
       </div>
     </section>
@@ -142,7 +200,7 @@
       <div class="footer-links">
         <a href="../index.html" data-i18n="nav.home">Home</a>
         <a href="about.html" data-i18n="nav.about">About Me</a>
-        <a href="testimony.html" data-i18n="nav.testimony">Testimony</a>
+        <a href="testimony.html" data-i18n="nav.testimony">Testimonials</a>
       </div>
     </div>
   </footer>
